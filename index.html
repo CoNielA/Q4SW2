@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<title>Seatwork #2: Strawberry Shortcake's Calculator</title>
+	<style>
+		body {
+			background-image: url(https://img.freepik.com/free-vector/cute-pink-background-grid-pattern-pastel-minimal-design-vector_53876-154198.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		h1 {
+			font-family: cursive;
+			padding: 10px;
+			color: deeppink;
+		}
+
+		.calculator {						
+			border: 2px solid hotpink;
+			width: 500px;
+			height: 400px;
+			padding: 10px;
+			box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+			-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+		}
+
+		p {
+			color: deeppink;
+			font-family: monospace;
+		}
+
+		#girl {
+			width: 500px;
+		}
+
+	</style>
+</head>
+<body>
+<h1>Strawberry Shortcake's Calculator</h1>
+
+	<script>
+	window.alert("Welcome to Strawberry Shortcake's Calculator! Have fun helping us make some special desserts!");
+
+	function sum () {
+		let strawberry = parseFloat(document.getElementById('strawberry').value);
+		let banana = parseFloat(document.getElementById('banana').value);
+		window.alert("Hello there! If we combine strawberries and bananas together, we can make a Strawberry-nana ice cream shake!");
+	}
+		function difference () {
+		let strawberry = parseFloat(document.getElementById('strawberry').value);
+		let banana = parseFloat(document.getElementById('banana').value);
+		window.alert("Oh no! Subtracting the foods will affect our business! You have no more strawberries and bananas left!");
+	}
+		function product () {
+		let strawberry = parseFloat(document.getElementById('strawberry').value);
+		let banana = parseFloat(document.getElementById('banana').value);
+		window.alert("Multiplying the fruits is just like adding. If you have one strawberry and banana, you can make a Strawberry-nana ice cream shake!");
+	}
+		function quotient () {
+		let strawberry = parseFloat(document.getElementById('strawberry').value);
+		let banana = parseFloat(document.getElementById('banana').value);
+		window.alert("Dividing the two fruits is like subtracting. But you still have a half strawberry and half banana. You can make a Straw-na ice cream shake!");
+	}
+    </script>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-6">
+				<img id="girl" src="https://img.freepik.com/premium-photo/cartoon-character-with-pink-background-picture-girl-pointing-index-finger_905510-5929.jpg">
+			</div>
+			<div class="calculator col-xl-6">
+				<p>Hello there! Input a value to compute the total number of desserts we could possibly use to run our dessert business!</p>
+				<form>
+					<label for="strawberry">Assign the number of Strawberry</label>
+					<input type="text" name="strawberry" id="strawberry">
+				    </br></br>
+					<label for="banana">Assign the number of Banana</label>
+					<input type="text" name="banana" id="banana">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<button type="button" onclick="sum ()" class="btn btn-success">Sum</button>
+		<button type="button" onclick="difference ()" class="btn btn-danger">Difference</button>
+	</div>
+    </br>
+	<div class="container">
+		<button type="button" onclick="product ()" class="btn btn-primary">Product</button>
+		<button type="button" onclick="quotient ()" class="btn btn-warning">Quotient</button>
+	</div>
+</body>
+</html>
